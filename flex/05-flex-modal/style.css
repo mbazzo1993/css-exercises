@@ -17,9 +17,38 @@ body {
 
 .modal {
   background: white;
+  display: flex;
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  padding: 12px;
+}
+
+.left-content {
+  align-self: self-start;
+  display: flex;
+  margin-right: 12px;
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#head-and-close {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header {
+  font-weight: bold;
+  font-size: large;
+}
+
+.close-button {
+  margin-right: 5px;
 }
 
 .icon {
@@ -48,6 +77,10 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+}
+
+.text {
+  margin: 5px 12px 10px 0px;
 }
 
 button {
